@@ -43,6 +43,7 @@
             txtChan = new TextBox();
             txtLe = new TextBox();
             input2 = new TextBox();
+            button1 = new Button();
             SuspendLayout();
             // 
             // label1
@@ -109,9 +110,9 @@
             // txtTinhToan
             // 
             txtTinhToan.BackColor = Color.Cyan;
-            txtTinhToan.Location = new Point(584, 168);
+            txtTinhToan.Location = new Point(584, 136);
             txtTinhToan.Name = "txtTinhToan";
-            txtTinhToan.Size = new Size(178, 131);
+            txtTinhToan.Size = new Size(178, 100);
             txtTinhToan.TabIndex = 1;
             txtTinhToan.Text = "Tính";
             txtTinhToan.UseVisualStyleBackColor = false;
@@ -183,12 +184,23 @@
             input2.Size = new Size(172, 40);
             input2.TabIndex = 3;
             // 
+            // button1
+            // 
+            button1.Location = new Point(584, 291);
+            button1.Name = "button1";
+            button1.Size = new Size(178, 66);
+            button1.TabIndex = 4;
+            button1.Text = "Tính Tiếp";
+            button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click_1;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(15F, 33F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(255, 128, 128);
             ClientSize = new Size(801, 464);
+            Controls.Add(button1);
             Controls.Add(txtLe);
             Controls.Add(txtChan);
             Controls.Add(txtTich);
@@ -229,5 +241,6 @@
         private TextBox txtChan;
         private TextBox txtLe;
         private TextBox input2;
+        private Button button1;
     }
 }
